@@ -4,7 +4,7 @@ type Color int
 
 const (
 	Empty Color = iota
-	Blank
+	Black
 	White
 	Wall
 	None
@@ -12,7 +12,7 @@ const (
 
 func ColorToStr(c Color) string {
 	switch c {
-	case Blank:
+	case Black:
 		return "o"
 	case White:
 		return "x"
@@ -25,10 +25,10 @@ func ColorToStr(c Color) string {
 
 func OpponentColor(me Color) Color {
 	switch me {
-	case Blank:
+	case Black:
 		return White
 	case White:
-		return Blank
+		return Black
 	}
 
 	panic("私の色は何？？？？？？？？？")

@@ -27,8 +27,8 @@ func NewBoard() *Board {
 
 	b.Cells[4][4] = White
 	b.Cells[5][5] = White
-	b.Cells[5][4] = Blank
-	b.Cells[4][5] = Blank
+	b.Cells[5][4] = Black
+	b.Cells[4][5] = Black
 
 	return b
 }
