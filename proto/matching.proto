@@ -3,6 +3,7 @@ package game;
 
 option go_package = "github.com/xxarupakaxx/reversi/gen/pb";
 
+import "proto/player.proto";
 service MatchingService {
   rpc JoinRoom(JoinRoomRequest) returns (stream JoinRoomResponse) {}
 }
