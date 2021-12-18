@@ -1,0 +1,9 @@
+syntax = "proto3";
+package game;
+
+option go_package = "github.com/xxarupakaxx/reversi/gen/pb";
+
+message Player {
+  int32 id = 1;
+  Color color = 2;
+}
