@@ -28,6 +28,13 @@ func NewReversi() *Reversi {
 	return &Reversi{}
 }
 
+func (r *Reversi) Run() int {
+	if err := r.run(); err != nil {
+		fmt.Println(err)
+		return 1
+	}
+	return 0
+}
 func (r *Reversi) run() error {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
